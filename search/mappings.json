@@ -1,0 +1,67 @@
+{
+    "mappings": {
+      "properties": {
+        "title": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword"
+                }
+            }
+        },
+        "genre": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword"
+                }
+            }
+        },
+        "artist": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword"
+             }
+            }
+        },
+        "lyricist": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword"
+                 }
+            }
+        },
+        "musicComposer": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword"
+            }
+          }
+        },
+        "views": {
+          "type": "double"
+        },
+        "metaphor": {
+          "type": "text"
+        }
+        ,
+        "interpretation": {
+          "type": "text"
+        },
+        "lyrics": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword"
+                 }
+            }
+        },
+        "type": {
+          "type": "keyword"
+        }
+      }
+    }
+}

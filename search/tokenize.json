@@ -1,0 +1,84 @@
+{
+  "settings": {
+    "analysis": {
+      "analyzer": {
+        "my_analyzer": {
+          "type": "custom",
+          "tokenizer": "standard",
+          "filter": ["stop"]
+        }
+      },
+      "filter": {
+        "stop": {
+          "type": "stop",
+          "stopwords": ["විසින්","ගත්කරු", "රචකයා", "ලියන්නා", "ලියන", "රචිත", "ලියපු", "ලියව්‌ව", "රචනා","කළ", "රචක", "ලියන්", "ලිවූ", "ගායකයා", "ගයනවා", "ගායනා", "ගායනා", "ගැයු", "ගයන", "කිව්", "කිවු", "සංගීත", "සංගීතවත්", "සංගීතය", "වර්ගය", "වර්‍ගයේ", "වර්ගයේම", "වර්ගයේ", "වැනි", "ඇතුලත්", "ඇතුලු", "විදියේ", "විදිහේ", "හොඳම", "ජනප්‍රිය", "ප්‍රචලිත", "ප්‍රසිද්ධම", "හොදම", "ජනප්‍රියම", "ලස්සනම", "ගීත", "සිංදු", "ගී", "සින්දු"]
+        }
+      }
+    }
+  },
+  "mappings": {
+    "properties": {
+      "title": {
+        "type": "text",
+        "analyzer": "my_analyzer",
+        "fields": {
+          "keyword": {
+            "type": "keyword"
+              }
+          }
+      },
+      "genre": {
+        "type": "text",
+        "analyzer": "my_analyzer",
+        "fields": {
+          "keyword": {
+            "type": "keyword"
+              }
+          }
+      },
+      "artist": {
+        "type": "text",
+        "analyzer": "my_analyzer",
+        "fields": {
+          "keyword": {
+            "type": "keyword"
+           }
+          }
+      },
+      "lyricist": {
+        "type": "text",
+        "analyzer": "my_analyzer",
+        "fields": {
+          "keyword": {
+            "type": "keyword"
+               }
+          }
+      },
+      "musicComposer": {
+        "type": "text",
+        "analyzer": "my_analyzer",
+        "fields": {
+          "keyword": {
+            "type": "keyword"
+          }
+        }
+      },
+      "views": {
+        "type": "double"
+      },
+      "metaphor": {
+        "type": "text",
+        "analyzer": "my_analyzer"
+      }
+      ,
+      "interpretation": {
+        "type": "text",
+        "analyzer": "my_analyzer"
+      },
+      "lyrics": {
+        "type": "text",
+        "analyzer": "my_analyzer"
+      }
+    }
+  }
+}
